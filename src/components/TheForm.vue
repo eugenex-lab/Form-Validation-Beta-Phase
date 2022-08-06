@@ -61,7 +61,7 @@ export default {
     return {
       userName: 'wwww',
       userAge:   null,
-      referrerInput: ''
+      referrerInput: 'apc'
 
     };
   },
@@ -72,9 +72,12 @@ export default {
       console.log("Name:    " + this.userName );
       console.log("Age: " + this.userAge);
       console.log(this.$refs.userAge.value + 5 );
+      console.log("Referred: -->>> " + this.referrerInput);
+
 
       this.userAge= null;
-      this.userName = ""
+      this.userName = "";
+      this.referrerInput= "apc";
 
 
 
